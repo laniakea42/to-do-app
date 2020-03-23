@@ -1,0 +1,146 @@
+* {
+	vertical-align: baseline;
+	font-size: 1.2rem;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+@font-face {
+	font-family: Simplifica;
+	src: url(fonts/simplifica.ttf);
+}
+
+body {
+	line-height: 1;
+	background-color: #d4cdc4; 
+	font-family: 'Segoe UI', Helvetica, sans-serif;
+}
+
+h1 {
+	font-family: Simplifica, Segoe, 'MS Sans Serif', sans-serif;
+	padding: 5px 0 5px 15px;
+	margin-top: 2vh;
+	background-color: #d5a129;
+	color: #fff;
+	font-size: 1.9rem;
+	box-shadow: 1px 2px 5px 0px rgba(122,122,122,0.35);
+}
+
+.header {
+	magrin:0;
+	padding: 0;
+}
+
+#app {
+	margin-top: 20px;
+	height: 100vh;
+	background-color: #f9f9f9;
+	box-shadow: 1px 2px 5px 0px rgba(122,122,122,0.35);
+}
+
+.fa {
+	color: #787132;
+}
+
+
+
+.strike {
+	text-decoration: line-through;
+}
+
+#taskList > li {
+	cursor: pointer;
+}
+
+ul {
+	list-style-type: none;
+	margin-bottom: 0;
+}
+
+li {
+	padding: 10px;
+	border-bottom: 1px solid rgba(120,113,50,0.35);
+	margin: 0 10px;
+	z-index: 13;
+}
+
+.fa-plus {
+	position: relative;
+	left: 20px;
+	z-index: 10;
+}
+
+
+input { 
+	width: 93%;
+	display: inline-block;
+	padding: 8px 10px 8px 33px;
+	border-bottom: 1px solid rgba(120,113,50,0.35);
+	margin-left: 10px;
+	background-color: #f9f9f9;
+	position: relative;
+	left: -20px;
+}
+
+
+button {
+	background:transparent;
+	border: 0;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+
+
+#context-menu {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: none;
+  list-style: none;
+  position: absolute;
+  z-index: 3;
+  background-color: white;
+  border: 1px solid #ebebeb;
+  border-bottom-width: 0px;
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  box-shadow: 1px 2px 5px 0px rgba(122,122,122,0.35);
+}
+
+
+#context-menu.active {
+  display: block;
+}
+
+
+
+
+@media (max-width: 720px) {
+	body {
+		font-size: 0.8rem;
+		background-color: #f9f9f9; 
+	}
+	h1 {
+		margin-top: 0;
+		font-size: 1.6rem;
+	}
+	#app {
+		box-shadow: none;
+	}
+	button {
+		padding-left: 10px;
+		float: right;
+	}
+	button:focus {
+		outline: 0 !important;
+	}
+
+	input {
+
+	width: 90%;
+	}
+}
+
