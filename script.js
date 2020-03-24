@@ -48,10 +48,6 @@ new Vue({
 			}
 		},
 
-		tasksGetter: function () {
-			return this.tasks;
-		},
-
 		changeEditing: function(taskText) {
 			if (taskText) {
 				this.editValue = taskText;
